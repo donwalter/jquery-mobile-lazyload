@@ -26,7 +26,7 @@ Include file:
 
 <cfset variables.results = objMobile.GetDataList(parameters)>
 
-<cfset variables.inc = url.startrow>
+<cfset variables.inc = url.startrow + 1>
 <cfoutput query="variables.results" startrow="#url.startrow#" maxrows="#url.maxrows#">
 	<li data-inc="#variables.inc#">
 		<a href="details.cfm?#variables.results.dataid#">
@@ -38,7 +38,7 @@ Include file:
 </cfoutput>
 ```
 
-Then add this to initiate the menu:
+Then add this to initiate the LazyLoad:
 ```javascript
 $(function(){
   $('.lazyload').lazyLoad('getdata.cfm');
