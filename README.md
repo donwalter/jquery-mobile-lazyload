@@ -9,7 +9,7 @@ Include the following file:
 <script type="text/javascript" src="js/jquery-mobile-lazyload.js"></script>
 ```
 
-Your listview will consist of 2 parts... the `<ul>` tag, and an include file that generates the `<li>` elements
+Your listview will consist of 2 parts... the `<ul>` tag, and an include file (getdata.cfm) that generates the `<li>` elements
 List file:
 ```coldfusion
 <ul data-role="listview" id="dataList" class="lazyload">
@@ -17,7 +17,7 @@ List file:
 </ul>
 ```
 
-Include file:
+Include file (getdata.cfm):
 ```coldfusion
 <cfsetting showdebugoutput="false">
 
